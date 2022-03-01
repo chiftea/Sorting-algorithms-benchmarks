@@ -1,8 +1,8 @@
 #pragma once
 #include <iostream>
 #include <vector>
-using namespace std;
-void populate_array(vector<int>& vect, int arr_size = 1000, int max_val = 100000)
+//using namespace std;
+void populate_array(std::vector<int>& vect, int arr_size = 1000, int max_val = 100000)
 {
 	//mersene twister (random device seed)  + uniform int distribution
 	std::random_device rd;

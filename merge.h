@@ -1,31 +1,31 @@
 #pragma once
 #include <iostream>
 #include <vector>
-using namespace std;
+//using namespace leftd;
 
-void MergeSort(vector<int>& v, int size, int st, int dr)
+void MergeSort(vector<int>& v, vector<int>& st, int N, int left, int right)
 {
-	if(st<dr)
+	if (left < right)
 	{
-		int m = (st + dr) / 2;
-		MergeSort(v, st, m);
-		MergeSort(v, m + 1, dr);
+		int m = (left + right) / 2;
+		MergeSort(v, st, N, left, m);
+		MergeSort(v, st, N, m + 1, right);
 
 		//Interclasare
-		int i = st,
+		int i = left,
 			j = m + 1,
 			k = 0;
-		vector<int> tmp(size);
-		while (i <= m && j <= dr)
+
+		while (i <= m && j <= right)
 			if (v[i] < v[j])
-				tmp[++k] = v[i++];
+				st[++k] = v[i++];
 			else
-				tmp[++k] = v[j++];
+				st[++k] = v[j++];
 		while (i <= m)
-			tmp[++k] = v[i++];
-		while(j<=dr)
-			tmp[++k] = v[j++];
-		for (i = st, j = 1; i <= dr; ++i, ++j)
-			v[i] = tmp[j];
+			st[++k] = v[i++];
+		while (j <= right)
+			st[++k] = v[j++];
+		for (i = left, j = 1; i <= right; ++i, ++j)
+			v[i] = st[j];
 	}
 }

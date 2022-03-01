@@ -3,7 +3,10 @@
 #include <fstream>
 #include <vector>
 
-using namespace std;
+
+//using namespace std;
+using std::cin; using std::cout;
+
 #define MAXSIZE 100000000
 #define MAXVALUE 100000000
 #define MAX_INT 2147483647

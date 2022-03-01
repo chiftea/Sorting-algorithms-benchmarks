@@ -1,13 +1,14 @@
 #pragma once
 #include <vector>
 #include "radix.h"
-using namespace std;
+//BUBA 
+using std::vector;
 
 int getMax(vector<int>& vect, int n)
 {
-	int mx = vect[0];
+	int Max = vect[0];
 	for (int i = 1; i < n; ++i)
-		if (vect[i] > mx)
-			mx = vect[i];
-	return mx;
+		if (vect[i] > Max)
+			Max = vect[i];
+	return Max;
 }

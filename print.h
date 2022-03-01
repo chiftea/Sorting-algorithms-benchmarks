@@ -1,11 +1,35 @@
 #pragma once
-#include <iostream>
 #include <vector>
-using namespace std;
+#include <fstream>
+#include <string>
+//using namespace std;
+using std::string; using std::ofstream;
+using std::vector;
 
-void print(vector<int>& vect)
+void clean_output(string filename)
 {
-	for (int i = 0; i < vect.size(); i++)
-		cout << i << " ";
-	cout << endl << endl;
+	ofstream g(filename);
+	g << "";
+}
+void print_unsorted(vector<int>& vect, int N, int Max, string filename = "output.txt")
+{
+	ofstream g;
+	g.open(filename, std::ios_base::app);
+	g << "\n\n\n";
+	g << "UNSORTED ARRAY OF " << N << " ELEMENTS AND A MAX VALUE OF " << Max << "\n\n\n\n\n";
+	for (auto i : vect)
+		g << i << " ";
+	g << "\n\n\n";
+	g.close();
+}
+void print_sorted(vector<int>& vect, int N, int Max, string filename = "output.txt")
+{
+	ofstream g;
+	g.open(filename, std::ios_base::app);
+	g << "\n\n\n";
+	g << "######  SORTED ARRAY OF " << N << " ELEMENTS AND A MAX VALUE OF " << Max << "\n\n\n\n\n";
+	for (auto i : vect)
+		g << i << " ";
+	g << "\n\n\n";
+	g.close();
 }

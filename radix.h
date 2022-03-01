@@ -1,13 +1,14 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include "getmax.h"
+#include "get_max.h"
 
 #define MAXSIZE 100000000
 #define MAXVALUE 100000000
 #define MAX_INT 2147483647
-
-using namespace std;
+using std::cin; using std::cout;
+using std::vector; using std::endl;
+//using namespace std;
 
 void read_base(int& base, int Max)
 {
@@ -44,7 +45,7 @@ void countsort(vector<int>& vect, int n, int exp, int base)
 		vect[i] = output[i];
 }
 void my_radix(vector<int>& vect, int base) {
-	int n = vect.size();
+	int n = (int) vect.size();
 	int m = getMax(vect, n);
 
 	for (int exp = 1; m / exp > 0; exp *= base)
