@@ -2,7 +2,7 @@
 #include <vector>
 using std::vector;
 
-void ShellSort(vector<int> vect, int n)
+void ShellSort(vector<int>& vect, int n)
 {
 	int i, j, temp;
 	for (int gap = n / 2; gap > 0; gap /= 2)
