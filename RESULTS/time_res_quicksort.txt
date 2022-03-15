@@ -1,0 +1,25 @@
+For N = 10 and Max = 10 quickSort is faster than introSort by 1e-06 seconds or 1 microseconds
+For N = 10 and Max = 100 introSort is faster than quickSort by 2e-06 seconds or 2 microseconds
+For N = 10 and Max = 1000 introSort is faster than quickSort by 1e-06 seconds or 1 microseconds
+For N = 10 and Max = 10000 quickSort is as fast as introSort
+For N = 10 and Max = 100000 quickSort is as fast as introSort
+For N = 10 and Max = 1000000 quickSort is faster than introSort by 2e-06 seconds or 2 microseconds
+For N = 100 and Max = 10 introSort is faster than quickSort by 5e-06 seconds or 5 microseconds
+For N = 100 and Max = 100 quickSort is faster than introSort by 5e-06 seconds or 5 microseconds
+For N = 100 and Max = 1000 quickSort is as fast as introSort
+For N = 100 and Max = 10000 quickSort is faster than introSort by 3e-06 seconds or 3 microseconds
+For N = 100 and Max = 100000 introSort is faster than quickSort by 1e-06 seconds or 1 microseconds
+For N = 100 and Max = 1000000 quickSort is faster than introSort by 3e-06 seconds or 3 microseconds
+For N = 1000 and Max = 10 introSort is faster than quickSort by 0.000303 seconds or 303 microseconds
+For N = 1000 and Max = 100 introSort is faster than quickSort by 7e-05 seconds or 70 microseconds
+For N = 1000 and Max = 1000 quickSort is faster than introSort by 2.6e-05 seconds or 26 microseconds
+For N = 1000 and Max = 10000 quickSort is faster than introSort by 0.000122 seconds or 122 microseconds
+For N = 1000 and Max = 100000 introSort is faster than quickSort by 2.4e-05 seconds or 24 microseconds
+For N = 1000 and Max = 1000000 quickSort is faster than introSort by 1.99999e-06 seconds or 2 microseconds
+For N = 10000 and Max = 10 introSort is faster than quickSort by 0.022026 seconds or 22026 microseconds
+For N = 10000 and Max = 100 introSort is faster than quickSort by 0.002972 seconds or 2972 microseconds
+For N = 10000 and Max = 1000 introSort is faster than quickSort by 0.000266 seconds or 266 microseconds
+For N = 10000 and Max = 10000 quickSort is faster than introSort by 0.00019 seconds or 190 microseconds
+For N = 10000 and Max = 100000 quickSort is faster than introSort by 0.001199 seconds or 1199 microseconds
+For N = 10000 and Max = 1000000 quickSort is faster than introSort by 0.001082 seconds or 1082 microseconds
+On these tests introSort is overall faster than quickSort by 23035 microseconds or 0.023035 seconds
